@@ -9,10 +9,10 @@ import com.example.ExpenseManagementApplication.model.Expense;
 public class ExpenseUtil {
 	public void validateExpense(Expense expense) {
 		if (StringUtils.isEmpty(expense.getId())) {
-			throw new IllegalArgumentException("Expense amount cannot be empty");
+			throw new IllegalArgumentException("Id cannot be empty");
 		}
 		if (StringUtils.isEmpty(expense.getDate())) {
-			throw new IllegalArgumentException("Expense amount cannot be empty");
+			throw new IllegalArgumentException("Date cannot be empty");
 		}
 		if (StringUtils.isEmpty(expense.getAmount())) {
 			throw new IllegalArgumentException("Expense amount cannot be empty");

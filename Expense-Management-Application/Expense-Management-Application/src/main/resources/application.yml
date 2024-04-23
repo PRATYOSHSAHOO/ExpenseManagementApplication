@@ -1,0 +1,14 @@
+server:
+ port: 1000
+spring:
+  data:
+  mongodb:
+      host: localhost         
+      port: 27017            
+      database: expenses
+  mongo:
+    repositories:
+      consider-nested-repositories: true
+  jpa:
+    database-platform: org.hibernate.dialect.MongoDBDialect  
+     
